@@ -12,8 +12,8 @@ export class PersonService {
   
   constructor(private http: HttpClient) { }
   //esta es la que me trae toda la informacion de los clientes
-  getAllPerson(page: number = 0, limit: number = 8) {
-    return this.http.get(`${this.url}/person?_page=${page}&_limit=${limit}`)
+  getAllPerson() {
+    return this.http.get(`${this.url}/person`)
   }
 
   //paginacion

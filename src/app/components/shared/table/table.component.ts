@@ -39,7 +39,7 @@ export class TableComponent implements OnInit {
     this.pageIndex = event ? event.pageIndex : 1;
     this.pageSize = event ? event.pageSize : 5;
 
-    this.listPerson.getAllPerson(this.pageIndex, this.mostrar).subscribe((data:any) => {      
+    this.listPerson.getAllPerson().subscribe((data:any) => {      
       this.ELEMENT_DATA = data;
       console.log(this.ELEMENT_DATA);
       
