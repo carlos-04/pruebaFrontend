@@ -1,0 +1,63 @@
+<div class="table-responsive">
+  <table mat-table [dataSource]="ELEMENT_DATA" >
+
+    <!-- Position Column -->
+    <ng-container matColumnDef="icon" class="table-header">
+      <th mat-header-cell *matHeaderCellDef> ... <fa-icon [icon]="faAngleDown" class="icon-plus mb-5"></fa-icon></th>
+      <td mat-cell *matCellDef="let element"> <img [src]="element.icon" alt=""> </td>
+    </ng-container>
+
+    <!-- Name Column -->
+    <ng-container matColumnDef="personaNo">
+      <th mat-header-cell *matHeaderCellDef> PERSONA NO. <fa-icon [icon]="faAngleDown" class="icon-plus mb-5"></fa-icon></th>
+      <td mat-cell *matCellDef="let element"> {{element.personaNo}} </td>
+    </ng-container>
+
+    <!-- Weight Column -->
+    <ng-container matColumnDef="tipoDomi">
+      <th mat-header-cell *matHeaderCellDef> TIPO DOMICILIO <fa-icon [icon]="faAngleDown" class="icon-plus mb-5"></fa-icon></th>
+      <td mat-cell *matCellDef="let element"> {{element.tipoDomi}} </td>
+    </ng-container>
+
+    <!-- Symbol Column -->
+    <ng-container matColumnDef="calle">
+      <th mat-header-cell *matHeaderCellDef> CALLE <fa-icon [icon]="faAngleDown" class="icon-plus mb-5"></fa-icon></th>
+      <td mat-cell *matCellDef="let element"> {{element.calle}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="numero">
+      <th mat-header-cell *matHeaderCellDef> NÚMERO <fa-icon [icon]="faAngleDown" class="icon-plus mb-5"></fa-icon></th>
+      <td mat-cell *matCellDef="let element"> {{element.numero}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="sector">
+      <th mat-header-cell *matHeaderCellDef> SECTOR <fa-icon [icon]="faAngleDown" class="icon-plus mb-5"></fa-icon></th>
+      <td mat-cell *matCellDef="let element"> {{element.sector}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="provicia">
+      <th mat-header-cell *matHeaderCellDef> PROVINCIA  <fa-icon [icon]="faAngleDown" class="icon-plus mb-5"></fa-icon></th>
+      <td mat-cell *matCellDef="let element"> {{element.provicia}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="estado">
+      <th mat-header-cell *matHeaderCellDef> ESTADO <fa-icon [icon]="faAngleDown" class="icon-plus  mb-5"></fa-icon></th>
+      <td mat-cell *matCellDef="let element"> {{element.estado}} </td>
+    </ng-container>
+
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+  </table>
+
+  <mat-paginator [length]="ELEMENT_DATA.length"
+  [pageSize]="pageSize"
+  [pageIndex]="pageIndex"
+
+  [pageSizeOptions]="[5, 10, 25, 100]"
+  aria-label="Select page"
+ 
+ >
+</mat-paginator>
+
+</div>
+

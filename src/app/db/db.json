@@ -1,0 +1,94 @@
+{
+  "person": [
+    {
+      "icon": "../../../../assets/img/Icon - Location.png",
+      "personaNo": 1,
+      "tipoDomi": "Oficina Principal",
+      "calle": "Ave. Winton Churchill",
+      "numero": 731,
+      "sector": "Evaristo Morales",
+      "provicia": "Distrito Nacional",
+      "estado": "Activo"
+    },
+    {
+      "icon": "../../../../assets/img/Icon - Location.png",
+      "personaNo": 2,
+      "tipoDomi": "Sucursal",
+      "calle": "Ave. Winton Churchill",
+      "numero": 247,
+      "sector": "Evaristo Morales",
+      "provicia": "Santiago de Los Caballeros",
+      "estado": "Activo"
+    },
+    {
+      "icon": "../../../../assets/img/Icon - Location.png",
+      "personaNo": 3,
+      "tipoDomi": "Trabajo",
+      "calle": "Ave. Winton Churchill",
+      "numero": 892,
+      "sector": "Evaristo Morales",
+      "provicia": "Distrito Nacional",
+      "estado": "Activo"
+    },
+    {
+      "icon": "../../../../assets/img/Icon - Location.png",
+      "personaNo": 4,
+      "tipoDomi": "Otro",
+      "calle": "Ave. Winton Churchill",
+      "numero": 346,
+      "sector": "Evaristo Morales",
+      "provicia": "Distrito Nacional",
+      "estado": "Activo"
+    },
+    {
+      "icon": "../../../../assets/img/Icon - Location.png",
+      "personaNo": 5,
+      "tipoDomi": "Veraneo",
+      "calle": "Ave. Winton Churchill",
+      "numero": 785,
+      "sector": "Centro de la Ciudad",
+      "provicia": "Distrito Nacional",
+      "estado": "Activo"
+    },
+    {
+      "icon": "../../../../assets/img/Icon - Location.png",
+      "personaNo": 6,
+      "tipoDomi": "Residencia",
+      "calle": "Ave. Winton Churchill",
+      "numero": 8569,
+      "sector": "Evaristo Morales",
+      "provicia": "Distrito Nacional",
+      "estado": "Activo"
+    },
+    {
+      "icon": "../../../../assets/img/Icon - Location.png",
+      "personaNo": 7,
+      "tipoDomi": "trabajo",
+      "calle": "Calle Rafael Augusto Sanchez",
+      "numero": 1254,
+      "sector": "Manuel de Jesus Troncoso",
+      "provicia": "Distrito Nacional",
+      "estado": "Activo"
+    },
+    {
+      "icon": "../../../../assets/img/Icon - Location.png",
+      "personaNo": 8,
+      "tipoDomi": "Verano",
+      "calle": "Paseo Oeste",
+      "numero": 100,
+      "sector": "Evaristo Morales",
+      "provicia": "Santo Domingo Norte",
+      "estado": "Activo"
+    },
+    {
+      "icon": "../../../../assets/img/Icon - Location.png",
+      "personaNo": 9,
+      "tipoDomi": "Residencia",
+      "calle": "Ave.Charles de gaulle",
+      "numero": 121,
+      "sector": "Franconia",
+      "provicia": "Santo domingo este",
+      "estado": "Activo"
+    }
+  ]
+}

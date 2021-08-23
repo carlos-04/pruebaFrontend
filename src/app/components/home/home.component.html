@@ -1,0 +1,40 @@
+<section class="section-title">
+  <div class="row">
+    <h3 class="title">Consulta Cliente Domicilio</h3>
+  </div>
+  <hr class="line-hr">
+</section>
+
+<section class="section-table">
+  <div class="row">
+    <div class="col-12 filter">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="row g-3 align-items-center">
+            <div class="col-auto">
+              <label for="inputsearch" class="col-form-label">Buscar: </label>
+            </div>
+            <div class="col-md-6">
+                      <input type="text" id="inputsearch" class="form-control" aria-describedby="passwordHelpInline" placeholder="Escriba lo que quiere buscar">
+                    </div>
+          </div>
+        </div>
+        <div class="col-md-6  d-flex justify-content-end mt-md-0 mt-2">
+          <button class="btn" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+            <fa-icon [icon]="faPlus" class="icon-plus mb-5"></fa-icon> Nuevo Domicilio
+          </button>
+        </div>
+        <div>
+          <app-modal></app-modal>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-12">
+      <app-table></app-table>
+    </div>
+  </div>
+
+
+
+
+</section>

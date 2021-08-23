@@ -1,0 +1,43 @@
+table {
+    width: 100%;
+    font-weight: 300;
+
+    .table-header {
+        background-color: #273f70;
+    }
+    th {
+        background-color: #273f70;
+        color: #fff;
+        font-size: 13px;
+        font-weight: 300;
+       
+    }
+
+    .icon-plus {
+        margin-left: 10px;
+        font-size: 14px;
+    }
+    .mat-paginator-page-size-label {
+        color: #ffff;
+    }
+
+    .mat-button-wrapper {
+        background-color: #273f70;
+    }
+
+    .mat-row:nth-child(even) {
+        background-color: #fafafa;
+    }
+
+    .mat-row:nth-child(odd) {
+        background-color: #fff;
+    }
+}
+
+@media (max-width: 992px) {
+    table {
+        th, td {
+            padding:0  40px;
+        }
+    }
+}

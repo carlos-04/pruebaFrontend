@@ -1,0 +1,57 @@
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+  aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header"  style="background-color:#273f70 ;">
+        <h2 class="modal-title text-white" id="staticBackdropLabel">Cliente</h2>
+        <button type="button" class=" btn btn-danger" data-bs-dismiss="modal" aria-label="Close">X</button>
+      </div>
+      <div class="modal-body">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-12">
+              <form class="row g-3" (ngSubmit)="guardar(f)" #f="ngForm">
+                <div class="col-md-6">
+                  <label for="icon" class="form-label">icon</label>
+                  <input type="number" class="form-control" id="icon" name="icon" [(ngModel)]="person.icon" disabled >
+                </div>
+                <div class="col-md-6">
+                  <label for="personNo" class="form-label">Persona No</label>
+                  <input type="number" class="form-control" id="personNo" name="personNo" [(ngModel)]="person.personaNo" >
+                 
+                </div>
+                <div class="col-md-6">
+                  <label for="tipoDomicilio" class="form-label">Tipo Domicilio</label>
+                  <input type="text" class="form-control" id="tipoDomicilio" name="tipoDomicilio" [(ngModel)]="person.tipoDomi" required touched>
+                </div>
+                <div class="col-md-6">
+                  <label for="calle" class="form-label">Calle</label>
+                  <input type="text" class="form-control" id="calle" name="calle" [(ngModel)]="person.calle">
+                </div>
+                <div class="col-md-6">
+                  <label for="numero" class="form-label">Número</label>
+                  <input type="number" class="form-control" id="numero" name="numero" [(ngModel)]="person.numero">
+                </div>
+                <div class="col-md-6">
+                  <label for="sector" class="form-label">Sector</label>
+                  <input type="text" class="form-control" id="sector" name="sector" [(ngModel)]="person.sector">
+                </div>
+                <div class="col-md-6">
+                  <label for="provincia" class="form-label">Provincia</label>
+                  <input type="text" class="form-control" id="provincia" name="provincia" [(ngModel)]="person.provicia">
+                </div>
+                <div class="col-md-6">
+                  <label for="estado" class="form-label">Estado</label>
+                  <input type="text" class="form-control" id="estado" name="estado" [(ngModel)]="person.estado">
+                </div>
+                <div class="col-md-12">
+                  <button type="submit" class="btn  border-none w-100 text-white"  style="background-color:#273f70 ;">Agregar</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
