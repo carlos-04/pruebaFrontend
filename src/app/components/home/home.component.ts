@@ -11,20 +11,18 @@ import { PersonService } from 'src/app/services/person.service';
 export class HomeComponent implements OnInit {
   faPlus = faPlus;
   faSearch = faSearch;
-
+  persona:any[] = [];
+  termino:string = '';
   constructor(private servicePerson: PersonService) { }
    
-
   ngOnInit(): void {
-    this.getPersonFilter()
-    
+   
   }
 
-  getPersonFilter(termino:string = "Oficina Principal" ) {
-    this.servicePerson.getFilterPerson(termino).subscribe((data:any) => {
+  getPersonFilter() {
+    this.servicePerson.getFilterPerson(this.termino).subscribe((data:any) => {
+      this.persona = data;
      console.log(data);
-
-
     })
   }
 

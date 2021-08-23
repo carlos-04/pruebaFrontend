@@ -34,7 +34,6 @@ export class TableComponent implements OnInit {
  
   }
 
-  applyFilter(filterValue:string) {}
 
   getPerson(event?:PageEvent) {
     this.pageIndex = event ? event.pageIndex : 1;
