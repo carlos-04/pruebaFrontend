@@ -11,8 +11,8 @@ export class PersonService {
   private url = 'http://localhost:3000';
   
   constructor(private http: HttpClient) { }
-  //esta es la que me trae toda la informacion de los personajes
-  getAllPerson(page: number = 0, limit: number = 10) {
+  //esta es la que me trae toda la informacion de los clientes
+  getAllPerson(page: number = 0, limit: number = 8) {
     return this.http.get(`${this.url}/person?_page=${page}&_limit=${limit}`)
   }
 

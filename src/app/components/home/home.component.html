@@ -4,7 +4,6 @@
   </div>
   <hr class="line-hr">
 </section>
-
 <section class="section-table">
   <div class="row">
     <div class="col-12 filter">
@@ -14,12 +13,20 @@
             <div class="col-auto">
               <label for="inputsearch" class="col-form-label">Buscar: </label>
             </div>
-            <div class="col-md-6">
+            <!-- <div class="col-md-6">
                       <input type="text" id="inputsearch" class="form-control" aria-describedby="passwordHelpInline" placeholder="Escriba lo que quiere buscar">
-                    </div>
+                    </div> -->
+                    <div class="col-md-4">
+                      <div class="input-group">
+                        <span class="input-group-append">
+                          <div class="input-group-text bg-transparent border border-end-0"> <fa-icon [icon]="faSearch" class="font-weight-300"></fa-icon></div>
+                      </span>
+                          <input class="form-control  border border-start-0" type="search" placeholder="Escribe lo que deseas buscar…" id="example-search-input">
+                      </div>
+                  </div>
           </div>
         </div>
-        <div class="col-md-6  d-flex justify-content-end mt-md-0 mt-2">
+        <div class="col-md-6  d-flex justify-content-md-end mt-md-0 mt-2">
           <button class="btn" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
             <fa-icon [icon]="faPlus" class="icon-plus mb-5"></fa-icon> Nuevo Domicilio
           </button>

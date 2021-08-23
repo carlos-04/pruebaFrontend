@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { faPlus } from '@fortawesome/free-solid-svg-icons';
+import { faPlus, faSearch } from '@fortawesome/free-solid-svg-icons';
 import { PersonService } from 'src/app/services/person.service';
 
 
@@ -10,6 +10,7 @@ import { PersonService } from 'src/app/services/person.service';
 })
 export class HomeComponent implements OnInit {
   faPlus = faPlus;
+  faSearch = faSearch;
 
   constructor(private servicePerson: PersonService) { }
    

@@ -1,5 +1,5 @@
 import { Component, Input, OnInit, ViewChild } from '@angular/core';
-import {  PageEvent } from '@angular/material/paginator';
+import {  MatPaginator, PageEvent } from '@angular/material/paginator';
 import { MatTableDataSource } from '@angular/material/table';
 import { faAngleDown } from '@fortawesome/free-solid-svg-icons';
 import { PersonService } from 'src/app/services/person.service';
@@ -12,32 +12,26 @@ import { PersonService } from 'src/app/services/person.service';
 export class TableComponent implements OnInit {
   faAngleDown = faAngleDown;
   ELEMENT_DATA:PeriodicElement[] = [];  
+  dataSource = new MatTableDataSource<PeriodicElement>(this.ELEMENT_DATA);
   displayedColumns: string[] = ['icon', 'personaNo', 'tipoDomi', 'calle', 'numero', 'sector', 'provicia','estado'];
- 
- 
-
 
   page:number = 1;
-  mostrar:number = 5
+  mostrar:number = 10
   
-
      //variables de la paginacion
-     
-
-     pageSize: number = 5;
+    
+    pageSize: number = 5;
     pageIndex: number = 0;
     length: number = 0;
     pageEvent?: PageEvent;
 
- 
 
-  constructor(private listPerson: PersonService) { }
+  constructor(private listPerson: PersonService) {}
 
   ngOnInit(): void {
    
     this.getPerson()
  
-  
   }
 
   applyFilter(filterValue:string) {}
