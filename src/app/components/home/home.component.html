@@ -21,7 +21,7 @@
                   </div>
                 </span>
                 <input class="form-control  border border-start-0"  type="search"[(ngModel)] = "termino"
-                  placeholder="Escribe lo que deseas buscar…" id="example-search-input" (keyup)="getPersonFilter()">
+                  placeholder="Escribe lo que deseas buscar…" id="example-search-input" (keyup)="getPersonFilter(termino)">
               </div>
             </div>
           </div>
@@ -37,11 +37,9 @@
       </div>
     </div>
     <div class="col-md-12">
-      <app-table></app-table>
+      <app-table  [ELEMENT_DATA] = "dataSource">
+      </app-table>
+      <mat-paginator [pageSizeOptions]="[5, 10, 20]" showFirstLastButtons></mat-paginator>
     </div>
   </div>
-
-
-
-
 </section>
